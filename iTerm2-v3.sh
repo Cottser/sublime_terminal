@@ -1,9 +1,6 @@
 #!/bin/bash
 
-CD_CMD="cd "\\\"$(pwd)\\\"" && clear"
-if echo "$SHELL" | grep -E "/fish$" &> /dev/null; then
-	CD_CMD="cd "\\\"$(pwd)\\\""; and clear"
-fi
+CD_CMD="cd "\\\"$(pwd)\\\""; clear"
 VERSION=$(sw_vers -productVersion)
 OPEN_IN_TAB=0
 

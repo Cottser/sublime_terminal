@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CD_CMD="cd "\\\"$(pwd)\\\"" && clear"
+CD_CMD="cd "\\\"$(pwd)\\\""; clear"
 
 osascript &>/dev/null <<EOF
     tell application "Hyper"
